@@ -1,0 +1,46 @@
+1). Cloning a repository, do changes in its files, commit those changes and push those to desired git branch
+--------------------------------------------------------------------------------------------------------------
+-- Cloning a repository
+git clone https://github.com/deepthinker98/Git-Learn.git
+
+-- Checking log of repo
+git log
+
+-- To check the branch status and the current working branch name (Initially it will be master branch)
+git status
+
+-- To start working on any other branch
+git checkout <desired-branch-name>
+
+-- Check the branch status
+git status
+
+-- To add all files in transient location
+git add *.*
+
+-- To commit changes which are added to transent location
+git commit -m "<Add_file_updation_message_here">
+
+-- To authorize user email, if asked
+git config --global user.email "<user_email_id>"
+
+-- To push changes to the git branch
+git push
+
+
+2). To create a new branch in the repository
+----------------------------------------------
+-- To create a branch from the current checked out branch
+git branch <new_branch>
+
+-- To create a branch based on some other existing branch
+git branch <new_branch> <base_branch>
+
+-- To create a branch from a specific commit (not a branch)
+git branch <new_branch> <that_specific_commit_hash_value>
+
+-- To create a branch from a specific tag
+git branch <new_branch> <tag_name>
+
+-- To create a branch from a remote branch
+git branch --track <new_branch> origin/<base_branch>
